@@ -28,7 +28,8 @@ function fish_prompt -d "Simple Fish Prompt"
     # Host
     #
     set -l host_name (hostname -s)
-    set -l host_glyph " at "
+    # set -l host_glyph " at "
+    set -l host_glyph "@"
 
     __print_color ffffff "$host_glyph"
     __print_color F6F49D "$host_name"
@@ -79,5 +80,6 @@ function fish_prompt -d "Simple Fish Prompt"
         end
     end
 
-    __print_color FF7676 "\e[K\n❯ "
+    # __print_color FF7676 "\e[K\n❯ "
+    __print_color FFFFFF "\e[K\n\$ "
 end
